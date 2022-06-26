@@ -66,7 +66,7 @@ public class FrontControllerServletV5 extends HttpServlet {
 
         String viewName = mv.getViewName();//논리이름 new-form
         MyView view = viewResolver(viewName);
-        
+
         view.render(mv.getModel(), request, response);
 
     }
